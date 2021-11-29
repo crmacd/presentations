@@ -33,7 +33,7 @@ class: middle
 1. Overall Goal
 1. Workflow
 1. Pipeline
-1. Testing
+1. Interaction
 
 ---
 class: middle      
@@ -158,9 +158,7 @@ class: middle
 ---
       
 # Workflow
-      
-### Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
-      
+            
 ## Before Release
 * Clean up tickets, backlog, and branches
 * merge order matters for testing release
@@ -185,6 +183,7 @@ class: middle
   * build.sh
     * works on everyones box
     * same command works in .gitlab.yml - with no changes
+      
 ## Keep it Simple
   * Super, super, serious folks - stop if it's not runnable by everyone after three interations
       
@@ -224,19 +223,25 @@ class: middle
   * same docker that the developers use is the same one the pipeline uses, duh! KISS
 * bare metal for hardware in the loop
   * mobile devices - adb usb - shell script running separately - json web services kick on commands
+      
 ## Where we are at
 * project is submodule of testing repo so that pipeline for building project is separate so robot framework docker and testing processes runs independent of project builds and pipeline with existing runners
 
 ---
       
-# Testing
+# Interaction
 
 ## Customer collaboration over contract negotiation
+      
+### Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
       
 __does your customer have any feedback - use it to constantly improve__
       
 ## Customer gets several release candidates before final release
+     
+---
       
+# Interaction
 
 ## Third party testing groups usually have to just see our process and are usually good to go
 * hourly or less turn around on certain products in the past
