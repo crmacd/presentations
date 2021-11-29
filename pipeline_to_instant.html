@@ -128,13 +128,25 @@ class: center, middle
 # Pipeline
     
 ## Quality
+* clean phase "build.sh clean"
 * analyis phase "build.sh analysis"
   * code quality
     * cppcheck
     * autopep8
     * pylint
+    * pyflakes
+    * flake8
+    * future: bandit(?), third party
 * testing phase "build.sh test"
-  * 
+  * runs the developer, functional, and other tests that needs to be run for that unit of code
+* build phase "build.sh build"
+  * obfuscated
+      
+## Simple Commands
+  * build.sh
+    * works on everyones box
+    * same command works in .gitlab.yml - with no changes
+### Keep it Simple
 
 ---
       
