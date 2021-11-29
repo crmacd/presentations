@@ -34,6 +34,16 @@ class: center, middle
 
 ---
       
+# Introduction
+      
+## Wireless Lab
+
+* Research
+* Mobile
+* Drones
+      
+---
+      
 # Overall Goal
 
 ## Working software over comprehensive documentation
@@ -45,10 +55,6 @@ class: center, middle
 * a branch is always ready for delivery
 * "develop" or "main" can be given to the customer at all times
 * epics, stories, tasks, bugs are all on single branches
-      
----
-      
-
       
 ---
       
@@ -79,31 +85,50 @@ class: center, middle
     * what your team members thought it meant 
 
 ---
+      
 # Workflow
       
-## Ticket lifecycle
+## Ticket Early Lifecycle
+      
 * identify
   * break down the ticket to simple english, add description and/or comments whenever it's confusing
-  * days of work not hours - no more than 8 days per sprint per person - respect live and work balance
+  * days of work not hours - no more than 8 days per sprint per person subtract leave - respect live and work balance
 * organize by like things
-  * rally around a sprint goal
+  * rally around a sprint goal - theme
   * research throws this completely off - and that's OK
   * the burn down charts mean nothing if something is learned and the software still works
+      
+---
+      
+# Workflow
+      
+## Ticket Actual Lifecycle      
 * to do
+  * pick your poison
 * in progress
+  * old way - update "build.sh test"
+      * cppunit, unit testing, selenium testing
+  * new way - adding "robot framework" test
 * road block
+  * scrum needs to know - fail fast duing scrum
 * peer review
-* fe
+  * ticket is not ready for peer review unless it has - testing instructions
+  * other developer checks the work start to fiinish and cross checks that the AC/story match what the code says it is
+* to fe or not to fe
+  * selenium -> robot framework
 * done
 
----      
+---
+      
+# Pipeline
+      
+
       
 ## Customer collaboration over contract negotiation
 Responding to change over following a plan
 
 ---      
 
-Ticket Workflow
 Gitlab Pipeline
 HitL Gitlab CI Runners and Automation
 Iteration/Increment planning
