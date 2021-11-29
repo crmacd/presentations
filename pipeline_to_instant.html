@@ -25,16 +25,19 @@ class: center, middle
 ## Product delivery on a moments notice
 
 ---
-
+class: middle
+      
 # Agenda
 
 1. Introduction
-2. Overall Goal
-3. Workflow
-4. Pipeline
+1. Overall Goal
+1. Workflow
+1. Pipeline
+1. Testing
 
 ---
-      
+class: middle      
+
 # Introduction
       
 ## Wireless Lab
@@ -56,6 +59,7 @@ class: center, middle
 ## What that really means?
 * a branch is always ready for delivery
 * "develop" or "main" can be given to the customer at all times
+* recommend one layer of separation
 * epics, stories, tasks, bugs are all on single branches
       
 ---
@@ -73,21 +77,33 @@ class: center, middle
   * everyone can see these and what needs to improve
   * critical of ourselves and our actual work
 * everyone picks their own work and what they want to work on
-  # no single point of failure
-  # personal growth
-  # no silos of knowledge
-  
+  - no single point of failure
+  - personal growth
+  - no silos of knowledge
+      
+---
+      
+# Workflow
+      
+### Continuous attention to technical excellence and good design enhances agility.
+      
+## Rule of Third Times the Charm 
+1. Learn how to do it
+1. Refine and adjust
+1. You should not be doing this again - this is the time to automate
+      
 ---
       
 # Workflow
       
 ## What this looks like in the process for our team
 * tickets are created by anyone, anytime, all the time
+  * see something, say something
 * team reviews backlog after scrum masters have grouped items
 * every developer writes testing instructions in their ticket
   * this does two interesting things
-    # what the developer thought the requirements should be
-    # what your team members thought it meant 
+    - what the developer thought the requirements should be
+    - what your team members thought it meant 
 
 ---
       
@@ -96,7 +112,7 @@ class: center, middle
 ## Ticket Early Lifecycle
       
 * identify
-  * break down the ticket to simple english, add description and/or comments whenever it's confusing
+  * break down the ticket to simple english, add description and/or comments *whenever* it's confusing
   * days of work not hours - no more than 8 days per sprint per person subtract leave - respect live and work balance
 * organize by like things
   * by epic, by feature
@@ -118,6 +134,7 @@ class: center, middle
   * new way - just adding "robot framework" test - same script
       * allows for adding anything "new" that comes up ... hint: new .gov requirements incoming
   * goal is always green
+  * documentation - sometimes updated with ticket, sometimes different ticket - complexity
 * road block
   * scrum needs to know - fail fast duing scrum
       
@@ -145,9 +162,10 @@ class: center, middle
 * ALWAYS - final release sprint
   * last minute bugs
   * full matrix testing
-    # testing everything against CNF and acceptance critera
-    # for us that means different devices and different versions
+    - testing everything against CNF and acceptance critera
+    - for us that means different devices and different versions
   * everyone tests on the entire team - everyone
+  * update out of date documentation based on changes made during the epic or release
 * constant improvement
       
 ---
@@ -209,16 +227,16 @@ class: center, middle
 # Testing
 
 ## Customer collaboration over contract negotiation
-
-## Third party testing groups usually have to just see our process and are usually good to go
-* Hourly or less turn around on certain products in the past
+      
+__does your customer have any feedback - use it to constantly improve__
       
 ## Customer gets several release candidates before final release
       
-## Rule of Third Times the Charm 
-1. Learn how to do it
-2. Refine and adjust
-3. You should not be doing this again - this is the time to automate
+
+## Third party testing groups usually have to just see our process and are usually good to go
+* hourly or less turn around on certain products in the past
+      
+## Adding and improving not subtracting from the testing methods
       
 ---
       
